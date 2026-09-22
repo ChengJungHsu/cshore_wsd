@@ -182,8 +182,8 @@ CSHORE.
 \begin{tabular}{||c|c|p{8cm}||}\hline
 Parameter& Allowed Values   & Meaning and Conditional  \\ \hline \hline
 ILINE & 1 & Single transect  \\ \hline
-IPROFL & 0, 1 &  0=no sediment transport, 1=sediment transport\\ \hline
-ISEDAV & 0 & unlimited sediment availability, Conditional on IPROFL = 1 \\ \hline
+IPROFL & 0, 1, 1.1&  0=no sediment transport, 1=sediment transport, 1.1=sed trasnport but skip initial smoothing\\ \hline
+ISEDAV & 0,1,-1 & 0=unlimited sediment availability, 1=hardbottom and conditional on IPROFL = 1, -1 = new hardbottom routine 2026-09-22   \\ \hline
 IPERM & 0 & neglect permeability \\ \hline
 IOVER & 1 & Allow overtopping and compute runup statistics \\ \hline
 IWTRAN & 0 & No standing water in landward zone, Conditional on IOVER = 1 \\ \hline
